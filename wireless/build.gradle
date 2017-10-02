@@ -1,0 +1,39 @@
+apply plugin: 'java-library'
+
+dependencies {
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+ext {
+
+    bintrayRepo = 'io'
+    bintrayName = 'wireless'
+
+    publishedGroupId = 'io.jeti'
+    libraryName = 'wireless'
+    artifact = 'wireless'
+
+    libraryDescription = 'Some convenience classes for dealing with wireless connections between devices.'
+
+    siteUrl = 'https://github.com/jeti/wireless'
+    gitUrl = 'https://github.com/jeti/wireless.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'jeti'
+    developerName = 'Matthew Holzel'
+    developerEmail = 'matthew.holzel@gmail.com'
+
+    organization = 'jeti'
+
+    licenseName = 'The Apache Software License, Version 2.0'  //Example for license
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+}
+
+//These two remote files contain Bintray configuration as described above.
+apply from: 'https://raw.githubusercontent.com/jeti/jcenter/master/install.gradle'
+apply from: 'https://raw.githubusercontent.com/jeti/jcenter/master/bintray.gradle'
