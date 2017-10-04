@@ -1,4 +1,4 @@
-package io.jeti.streams.wireless;
+package io.jeti.wireless;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -71,14 +71,14 @@ public class Server {
      *
      * ---------------------------------------------
      */
-    private ServerSocket      serverSocket = null;
-    private final Object      serverLock   = new Object();
+    private ServerSocket        serverSocket = null;
+    private final Object        serverLock   = new Object();
 
-    private final Set<Socket> sockets      = new HashSet<>();
-    private static final int  portDefault  = 0;
-    private final Thread      listeningThread;
-    private final Listener    listener;
-    private AtomicBoolean     running      = new AtomicBoolean(true);
+    private final Set<Socket>   sockets      = new HashSet<>();
+    private static final int    portDefault  = 0;
+    private final Thread        listeningThread;
+    private final Listener      listener;
+    private final AtomicBoolean running      = new AtomicBoolean(true);
 
     /*
      * ---------------------------------------------

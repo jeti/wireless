@@ -1,4 +1,4 @@
-package io.jeti.streams.wireless;
+package io.jeti.wireless;
 
 import io.jeti.streams.SerializableStreamReader;
 import io.jeti.streams.SerializableStreamReaderSink;

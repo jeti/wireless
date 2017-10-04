@@ -1,6 +1,7 @@
 apply plugin: 'java-library'
 
 dependencies {
+    compile 'io.jeti:streams:1.0.0'
 }
 
 sourceCompatibility = "1.8"

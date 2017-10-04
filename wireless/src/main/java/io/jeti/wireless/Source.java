@@ -1,4 +1,4 @@
-package io.jeti.streams.wireless;
+package io.jeti.wireless;
 
 import java.net.InetAddress;
 import java.net.Socket;
